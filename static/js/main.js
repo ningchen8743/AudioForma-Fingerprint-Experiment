@@ -10,9 +10,9 @@ import {Preprocessor}            from './preprocessor.js';
 
 // localhost:8000
 
-let csvFileName = "../example/TheCatConcertoDebug_harmonic_result.csv";
+let csvFileName = "../py/RobertoDiMarino_CelticSuite_harmonic_result.csv";
 
-let mediaName = "../example/TheCatConcertoDebug.mp3";
+let mediaName = "../data/RobertoDiMarino_CelticSuite.mp3";
 
 
 //------------------------------------------------------------
@@ -44,7 +44,6 @@ window.addEventListener("load", (event) => {
             prep.preprocess(csvRawData, ac.plotRefreshRate);
 
             musicPlot.initializePlot(csvRawData);
-            ac.musicLengthText.textContent = musicPlot.totalMusicTimeInSec.toFixed(1);
 
             mediaC.mediaEle.play();
 
