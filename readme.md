@@ -5,7 +5,7 @@ Technical Support: Tianyu Liu
 
 ## Introduction
 AudioForma is an audio analysis web app designed and developed by Ning Chen, Jasper Croome, and Rebecca Lantner. The goal is to add a visual dimension to an audio experience.
-- The first part of the app let users explore their Spotify music library and select a song to hear and view in detail. This visualization hinged on song “metadata” like title, artist, and genre. Before exploration, make sure you have registered Spotify, save several favorite songs to your library. Go to `https://audioforma.herokuapp.com/`to authorize AudioForma to access your Spotify library.
+- The first part of the app let users explore their Spotify music library and select a song to hear and view in detail. This visualization hinged on song “metadata” like title, artist, and genre. "Sort function" is set to arrange songs by popularity and some of Spotify’s more unique data attributes. Before exploration, make sure you have registered Spotify, saved several songs to your library. Go to `https://audioforma.herokuapp.com/`to authorize AudioForma to access your Spotify library.
 - Files in this repository present the second part of the app, a song fingerprint experimental design. 
 
 ## Quick start
