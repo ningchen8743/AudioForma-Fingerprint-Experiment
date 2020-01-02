@@ -5,7 +5,7 @@ Technical Support: Tianyu Liu
 
 ## Introduction
 AudioForma is an audio analysis web app designed and developed by Ning Chen, Jasper Croome, and Rebecca Lantner. The goal is to add a visual dimension to an audio experience.
-- The first part of the app let users explore their Spotify music library and select a song to hear and view in detail. This visualization hinged on song “metadata” like title, artist, and genre. Before exploration, make sure you have registered Spotify, save several favorite songs to your library. Go to `https://audioforma.herokuapp.com/`to authorize AudioForma the rights to access your Spotify library.
+- The first part of the app let users explore their Spotify music library and select a song to hear and view in detail. This visualization hinged on song “metadata” like title, artist, and genre. Before exploration, make sure you have registered Spotify, save several favorite songs to your library. Go to `https://audioforma.herokuapp.com/`to authorize AudioForma to access your Spotify library.
 - Files in this repository present the second part of the app, a song fingerprint experimental design. 
 
 ## Quick start
@@ -19,7 +19,7 @@ AudioForma is an audio analysis web app designed and developed by Ning Chen, Jas
 + The real-time rendering captures up to 12 possible notes across 8 possible octaves. The visual result shows 30 seconds of audio "traces", each curve representing a note’s intensity at a given time and accumulating into a stacked, Gaussian fingerprint.
 
 ## Instructions on how to produce your own music fingerprint
-AudioForma's data level results are produced by Librosa audio analysis library.
+AudioForma's raw data is produced by Librosa audio analysis library.
 To get the best visualization result, it is highly recommended that the length of music should be under 30 seconds.
 
 To install `librosa` on Windows:
