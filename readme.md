@@ -1,6 +1,6 @@
 # AudioForma Fingerprint Experimental Design
 
-Information Design: Ning Chen
+Information Design: Ning Chen  
 Technical Support: Tianyu Liu
 
 ## Introduction
