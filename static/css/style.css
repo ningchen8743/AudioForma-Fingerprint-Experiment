@@ -12,9 +12,9 @@ body {
 }
 
 .masthead {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   top: 0px;
-  position: fixed;
+  position: relative;
   width: 95vw;
   font-family: "Pacifico";
   background-color: #222;
@@ -30,16 +30,16 @@ body {
   }
 }
 
-/* #my-media {
+#my-media {
   width: 100%;
   height: auto;
   margin-left: 30px;
-} */
+}
 
 .flex-container {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: left;
+  width: 100vw;
 }
 
 .flex-container-alt {
@@ -94,6 +94,7 @@ div * {
 #plot-div {
   width: 900px;
   margin-left:70px;
+  margin:0;
 }
 
 #legend-div {

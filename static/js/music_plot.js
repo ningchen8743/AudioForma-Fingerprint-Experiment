@@ -10,11 +10,11 @@ export function MusicPlot()
 
     this.margin = {top: 10, right: 10, bottom: 10, left: 10};
     this.numNotes = 12;
-    this.totalWidth = 470;
+    this.totalWidth = 300;
     this.totalHeight = 70;
 
-    this.fullPlotWidth  = this.numNotes * this.totalHeight;
-    this.fullPlotHeight = this.totalWidth + 100;
+    this.fullPlotWidth  = this.numNotes * this.totalHeight + 100;
+    this.fullPlotHeight = this.totalWidth + 400;
     this.width  = this.totalWidth  - this.margin.left - this.margin.right;
     this.height = this.totalHeight - this.margin.top  - this.margin.bottom;
 
@@ -313,10 +313,14 @@ export function MusicPlot()
               .attr("width", this.totalWidth)
               .attr("height", this.totalHeight)
               .attr("transform", (d, i) => {
-                    let rotateAngle = 90;
-                    let xTranslate = this.margin.left + this.totalHeight * (i + 1);
-                    let yTranslate = this.margin.top;
-                    return `translate(${xTranslate}, ${yTranslate}) rotate(${rotateAngle} 0 0)`;
+                    //let rotateAngle = 90;
+                    //let xTranslate = this.margin.left + this.totalHeight * (i + 1);
+                    //let yTranslate = this.margin.top;
+                    //return `translate(${xTranslate}, ${yTranslate}) rotate(${rotateAngle} 0 0)`;
+					let rotateAngle = 360.0 / this.myData.length * i;
+                    let xTranslate = this.fullPlotWidth / 2 - 100;
+                    let yTranslate = this.fullPlotHeight / 2 - this.totalHeight;
+                    return `translate(${xTranslate}, ${yTranslate}) rotate(${rotateAngle} 0 ${this.totalHeight})`;
               });
 
         this.myText = this.myGroups.append("text")
@@ -328,7 +332,8 @@ export function MusicPlot()
               .attr("alignment-baseline", "middle") // text vertical alignment
               .attr("fill", "#eeeeee")
               .style("font-size","20px")
-              .attr("transform", `translate(${this.width + 40}, ${this.margin.top + this.height}) rotate(-90)`);
+              //.attr("transform", `translate(${this.width + 40}, ${this.margin.top + this.height}) rotate(-90)`);
+			  .attr("transform", `translate(${this.totalWidth}, ${this.margin.top + this.height})`);
 
 
         // this.myGroups.append("g")

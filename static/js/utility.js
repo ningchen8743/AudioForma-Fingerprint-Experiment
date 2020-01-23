@@ -106,15 +106,15 @@ export function pickColor(index)
                               // "#e6beff",
                               // "#fabebe"];
 
-    const predefinedColors = ["#3F71A3",
-                            "#408A8F",
-                            "#1DB954",
-                            "#BAD65E",
-                            "#F7D554",
-                            "#FC8847",
-                            "#EA4A3C",
-                            "#85002A",
-                            "#850096"];
+    const predefinedColors = ["#9B3EB3",
+                            "#5E57CB",
+                            "#1EB8D0",
+                            "#28E98C",
+                            "#79F65A",
+                            "#C9D43A",
+                            "#FF8C39",
+                            "#FE5375",
+                            "#E90052"];
 
     let colorIdx = index % predefinedColors.length;
     return predefinedColors[colorIdx];
