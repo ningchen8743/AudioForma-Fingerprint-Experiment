@@ -318,8 +318,8 @@ export function MusicPlot()
                     //let yTranslate = this.margin.top;
                     //return `translate(${xTranslate}, ${yTranslate}) rotate(${rotateAngle} 0 0)`;
 					let rotateAngle = 360.0 / this.myData.length * i;
-                    let xTranslate = this.fullPlotWidth / 2 - 100;
-                    let yTranslate = this.fullPlotHeight / 2 - this.totalHeight;
+                    let xTranslate = this.fullPlotWidth / 2;
+                    let yTranslate = this.fullPlotHeight / 2 - this.totalHeight - 30;
                     return `translate(${xTranslate}, ${yTranslate}) rotate(${rotateAngle} 0 ${this.totalHeight})`;
               });
 

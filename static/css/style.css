@@ -14,6 +14,7 @@ body {
 .masthead {
   margin-bottom: 0;
   top: 0px;
+
   position: relative;
   width: 95vw;
   font-family: "Pacifico";
@@ -39,13 +40,12 @@ body {
 .flex-container {
   display: flex;
   justify-content: left;
-  width: 100vw;
+  width: 95vw;
 }
 
 .flex-container-alt {
   display: flex;
   justify-content: left;
-  margin-top: 10vh;
 }
 
 #song-label{
@@ -53,7 +53,7 @@ body {
 }
 
 #song-content{
-    width:30%;
+    width:20%;
 }
 
 #artist-label{
@@ -89,6 +89,10 @@ body {
 
 div * {
   margin: 1vh;
+}
+
+#controller-div {
+	padding-left: 5vw;
 }
 
 #plot-div {
